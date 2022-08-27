@@ -4,9 +4,9 @@
     const apiUrl = "https://type.fit/api/quotes";
     try {
       const response = await fetch(apiUrl);
-      const apiQoutes = await response.json();
-      const qoute = apiQoutes[Math.floor(Math.random() * apiQoutes.length)];
-      return qoute;
+      const apiQuotes = await response.json();
+      const Quote = apiQuotes[Math.floor(Math.random() * apiQuotes.length)];
+      return Quote;
     } catch (error) {
       // Catch Error
       console.log(error);
